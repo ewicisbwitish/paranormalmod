@@ -24,6 +24,7 @@ public class EMFReader extends Item implements IItemColor {
         this.setUnlocalizedName("emf_reader");
         this.setRegistryName(ModMain.MODID, "emf_reader");
         this.level = 1;
+        this.setCreativeTab(ModMain.tabParanormalEncounters);
     }
 
     // Detect active redstone and EntityGhost entities
@@ -98,5 +99,10 @@ public class EMFReader extends Item implements IItemColor {
         } else {
             return 0xFFFFFF;
         }
+    }
+
+    // Return the model location for the item
+    public String getCustomModelResourceLocation() {
+        return ModMain.MODID + ":emf_reader";
     }
 }
