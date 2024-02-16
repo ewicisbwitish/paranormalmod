@@ -64,10 +64,8 @@ public class EMFReader extends Item implements IItemColor {
             float r, g, b;
             switch (this.level) {
                 case 1:
-                    r = 0.0f;
-                    g = 1.0f;
-                    b = 0.0f;
-                    break;
+                    // Use the off texture for level 1
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_off").getAverageColor();
                 case 2:
                     r = 0.6f;
                     g = 1.0f;
