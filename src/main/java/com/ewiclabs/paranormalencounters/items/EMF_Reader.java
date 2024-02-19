@@ -64,33 +64,17 @@ public class EMFReader extends Item implements IItemColor {
             float r, g, b;
             switch (this.level) {
                 case 1:
-                    // Use the off texture for level 1
-                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_off").getAverageColor();
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_1").getAverageColor();
                 case 2:
-                    r = 0.6f;
-                    g = 1.0f;
-                    b = 0.0f;
-                    break;
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_2").getAverageColor();
                 case 3:
-                    r = 1.0f;
-                    g = 1.0f;
-                    b = 0.0f;
-                    break;
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_3").getAverageColor();
                 case 4:
-                    r = 1.0f;
-                    g = 0.6f;
-                    b = 0.0f;
-                    break;
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_4").getAverageColor();
                 case 5:
-                    r = 1.0f;
-                    g = 0.0f;
-                    b = 0.0f;
-                    break;
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_5").getAverageColor();
                 default:
-                    r = 0.0f;
-                    g = 0.0f;
-                    b = 0.0f;
-                    break;
+                    return Minecraft.getMinecraft().getTextureMapBlocks().getAtlasSprite(ModMain.paranormalencounters + ":items/emf_reader_off").getAverageColor();
             }
             Color color = new Color(r, g, b);
             return color.getRGB();
